@@ -1,12 +1,12 @@
 {
-  "name": "lib-ts-template",
+  "name": "pipo-case",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "jest --watch",
-    "watchTest": "jest --watch",
+    "test": "jest ./src",
+    "test:watch": "jest --watchAll ./src",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
@@ -24,18 +24,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Parsimotion/lib-ts-template.git"
+    "url": "git+https://github.com/maurocicerchia/pipo-case.git"
   },
   "files": [
     "lib/**/*"
   ],
   "keywords": [],
-  "author": "Producteca",
+  "author": "Deimon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Parsimotion/lib-ts-template/issues"
+    "url": "https://github.com/maurocicerchia/pipo-case.git"
   },
-  "homepage": "https://github.com/Parsimotion/lib-ts-template#readme",
+  "homepage": "https://github.com/maurocicerchia/pipo-case#readme",
   "devDependencies": {
     "@types/jest": "^28.1.4",
     "jest": "^28.1.2",

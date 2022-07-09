@@ -11,7 +11,7 @@ const text = "que impotencia loco, me enferma las injusticias";
 pipo(text); // Que impotencia loco,me enferma las injusticias !!!!!
 ```
 ### Options
-- `intensity`: amount of anger that Pipo feels (default 5, min 1, max 10)
+- `intensity`: amount of anger that Pipo feels (default 5, min 0, max 10)
 
 ```typescript
 pipo(text, { intensity: 7 });

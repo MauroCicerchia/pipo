@@ -30,6 +30,12 @@ describe("Intensity", () => {
         expect(pipo(text, { intensity: 6 })).toBe(result);
     });
 
+    test("should format with 0 intensity", () => {
+        const text = "me quiero agarrar a piñas";
+        const result = "Me quiero agarrar a piñas.";
+        expect(pipo(text, { intensity: 0 })).toBe(result);
+    });
+
     test("should throw an error if the intensity is invalid", () => {
         const text = "me quiero agarrar a piñas";
         expect(() => pipo(text, { intensity: -1 })).toThrow(InvalidIntensity);

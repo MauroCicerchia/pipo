@@ -22,9 +22,10 @@ export default function pipo(originalText: string, options: Options = {}) {
 const transformations = (options: Options) => [
     _.upperFirst,
     (text: string) => text.replace(/,\s/g, ","),
-    (text: string) => text + " " + exclamations(options.intensity ?? defaults.intensity),
-]
+    (text: string) => text + exclamations(options.intensity ?? defaults.intensity),
+];
 
 export function exclamations(intensity: number) {
-    return _.repeat("!", intensity);
+    if (intensity === 0) return ".";
+    return " " + _.repeat("!", intensity);
 }
